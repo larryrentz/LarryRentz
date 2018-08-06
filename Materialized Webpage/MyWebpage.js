@@ -111,7 +111,6 @@ function initMap()
 	           		// Set icon image
 	           		marker.setIcon(props.iconImage);
 	           	}	
-
 	           	// Check content 
 	           	if(props.content)
 	           	{
