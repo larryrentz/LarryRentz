@@ -1,0 +1,324 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Materialized Webpage</title>
+  <style>
+  	header
+  	{
+  		background: url('../images/computer-dark.jpg');
+  		background-size: cover;
+  		background-position: center;
+  		min-height: 1000px;
+  	}
+  	.section
+  	{
+  		padding-top: 4vw;
+  		padding-bottom: 4vw;
+  	}
+
+  	@media screen and (max-width: 670px)
+  	{
+  		header
+  		{
+  			min-height: 500px;
+  		}
+  	}
+
+  	.tabs .indicator
+  	{
+      background-color: #1a237e;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active
+    {
+      background: transparent;
+    }
+
+	#map
+	{
+		width: 100%;
+		height: 50%;
+	}
+
+	.skills 
+{
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 30px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: indigo
+}
+
+.html {width: 90%; background-color: rgb(70, 117, 210);} /* Green */
+.css {width: 80%; background-color: rgb(70, 117, 210);} /* Blue */
+.js {width: 65%; background-color: rgb(70, 117, 210);} /* Red */
+.php {width: 60%; background-color: rgb(70, 117, 210);} /* Dark Grey */
+
+
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header id="intro">
+  	<nav class="nav-wrapper transparent">
+  		<div class="container">
+  			<a href="#intro" class="brand-logo">Larry Rentz</a>
+  			<a href="" class="sidenav-trigger" data-target="mobile-menu">
+  				<i class="material-icons">menu</i>
+  			</a>
+  			<ul class="right hide-on-med-and-down">
+  				<li><a href="#about">About</a></li>
+  				<li><a href="#education">Education</a></li>
+  				<li><a href="#myskills">Skills</a></li>
+  				<li><a href="#involvement">Involvement</a></li>
+  				<li><a href="../Documents/Larry Rentz Resume.pdf">Resume</a></li>
+  				<li><a href="#contact">Contact</a></li>
+  				<li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="LinkedIn"> 
+            		<i class="fab fa-linkedin"></i>
+          		</a></li>
+          		<li><a href="#" class="tooltipped btn-floating btn-small transparent" data-position="bottom" data-tooltip="GitHub">
+            		<i class="fab fa-github"></i>
+          		</a></li>
+  			</ul>		
+
+  			<ul class="sidenav grey lighten-2" id="mobile-menu">
+  				<li><a href="#">About</a></li>
+  				<li><a href="#">Education</a></li>
+  				<li><a href="#">Skills</a></li>
+  				<li><a href="#">Involvement</a></li>
+  				<li><a href="#">Resume</a></li>
+  				<li><a href="#">Contact</a></li>
+  			</ul>
+  		</div>
+  	</nav>	
+  	<h1 class="center-align vertical-align white-text">Larry Rentz</h1>
+  	<h5 class="center-align white-text">My goal is to positively change the world through my passion for technology.</h5>
+  </header>
+
+   <section class="container section scrollspy" id="about">
+  	<div class="row">
+  		<div class="col s12 l4">
+  			<h2 class="indigo-text text-darken-4">A Little About Me</h2>
+  		</div>
+  		<div class="col s12 l6 offset-12">
+  			<ul class="tabs">
+  				<li class="tab col s6">
+  					<a href="#about" class="indigo-text text-darken-4">About Me</a>
+  				</li>
+  				<li class="tab col s6">
+  					<a href="#map" class="indigo-text text-darken-4">Where I've Lived</a>
+  				</li>
+  			</ul>
+  			<div class="col s12" id="about">
+  				<p class="flow-text indigo-text text-darken-4"></p>
+  				<p> Hello, I'm Larry Rentz. I am second year Computer Engineering major at the University of Florida. I was born in Gainesville, FL.</p>
+  				<p>However, due to my father being in the military, my family has lived in several other places including Maryland, Pennsylvania, Missouri, Kansas, Georgia, Virginia, and Alabama.</p>
+  				<p> I chose to major in Computer Engineering because of my love for technology. Some of my early interests in Computer Engineering are Web and App Development, Augmented Reality, and Embedded Systems.</p>
+  			</div>
+  			<div class="col s12" id="map">
+          
+        </div>
+  		</div>
+  	</div>
+  </section>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="../images/education2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <section class="container section scrollspy" id ="education">
+  	<div class="row">
+  		<div class="col s12 l4">
+  			<h2 class="indigo-text text-darken-4">Education</h2>
+  	</div>
+  	<div class="row">
+  		<div class="col s12 l4 offset-l2">
+  			<h4 class="indigo-text text-darken-4">2022(Expected)</h4>
+  			<h2 class="indigo-text text-darken-4">B.S in Computer Engineering</h2>
+  			<h2 class="indigo-text text-darken-4">Univeristy of Florida</h2>
+  	</div>
+  	</section>
+
+  	  <div class="parallax-container">
+    <div class="parallax">
+      <img src="../images/skills.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+  <section class="container section scrollspy" id ="myskills">
+  	<div> 
+    	<h2 class="indigo-text text-darken-4 center-align" >My Skills</h2>
+        <p>HTML</p>
+        <div class="container">
+          <div class="skills html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+          <div class="skills css">80%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skills js">65%</div>
+        </div>
+
+        <p>Swift</p>
+        <div class="container">
+          <div class="skills php">60%</div>
+        </div>
+    </div>
+  	</section>
+
+
+	<div class="parallax-container">
+    <div class="parallax">
+      <img src="../images/clubs.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="involvement">
+  	<div class="row">
+  		<div class="col s12 l4">
+  			<img src="../images/NSBE.jpg" alt=" " class="responsive-img materialboxed">
+  		</div>
+  		<div class="col s12 l6 offset-l1">
+  			<h2 class="indigo-text tex-darken-4">National Society of Black Engineers</h2>
+  			<p>Collaborated with partner to develop backend of web application that assists college students with time management using Python and Flask for NSBE’s Region III Fall Regional Conference Hackathon
+            </p>
+            <p>Collaborated with partner to develop backend of web application that locates black-owned businesses in major cities using JavaScript and Firebase for NSBE&aposs 2018 National Conference Hackathon 
+            </p>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col s12 l4 push-l7 offset-l1">
+  			<img src="../images/HPVC.jpg" alt=" " class="responsive-img materialboxed">
+  		</div>
+  		<div class="col s12 l6 pull-l5 right-align offset-l1">
+  			<h2 class="indigo-text tex-darken-4">Human Powered Vehicle Club</h2>
+  			<p>Cooperated with two partners to design and build the display interface for the vehicle using an Arduino controller
+            </p>
+            <p>Prototyped C# program to load onto an Arduino microcontroller to support automatic gear shifting
+            </p>
+            <p>Performed machine preparation and TIG welding on test body to prepare for vehicle chassis assembly</p>
+  		</div>
+  	</div>
+  </section>
+  <!--
+  <section class="container section" id ="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What do i do...?</h2>
+        <p>yea the few thsi thwhe dfofkd iwhfcxh ihkhs jsh dsjhsjfb sisjfs ishfi idhfjs ewowhf fshih wrhuow fshhfu ewoeit xic wrhifsc</p>
+        <p>yea the few thsi thwhe dfofkd iwhfcxh ihkhs jsh dsjhsjfb sisjfs ishfi idhfjs ewowhf fshih wrhuow fshhfu ewoeit xic wrhifsc</p>
+      </div>
+      <div class="col s12 l6 offset-12">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#about" class="indigo-text text-darken-4">About Me</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#map" class="indigo-text text-darken-4">Where I've Lived</a>
+          </li>
+        </ul>
+        <div class="col s12" id="about">
+          <p class="flow-text indigo-text text-darken-4">About Me</p>
+          <p>yea the few thsi thwhe dfofkd iwhfcxh ihkhs jsh dsjhsjfb sisjfs ishfi idhfjs ewowhf fshih wrhuow fshhfu ewoeit xic wrhifsc</p>
+          <p>yea the few thsi thwhe dfofkd iwhfcxh ihkhs jsh dsjhsjfb sisjfs ishfi idhfjs ewowhf fshih wrhuow fshhfu ewoeit xic wrhifsc</p>
+        </div>
+        <div class="col s12" id="map">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="../images/contact.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+  
+  
+
+  <!-- services / tabs -->
+  
+  <!-- parallax -->
+  
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+  	<div class="row">
+  		<div class="col s12 l5">
+  			<h2 class="indigo-text text-darken-4">Contact</h2>
+  		</div>
+  		<div class="col s12 l5 offset-l2">
+  			<form action="">
+  				<div class="input-field">
+  					<i class="material-icons prefix">letter</i>
+  					<textarea id="name" class="materialize-textarea"></textarea>
+  					<label for="message">Your name</label>
+  				</div>
+  				<div class="input-field">
+  					<i class="material-icons prefix">email</i>
+  					<input type="email" id="email">
+  					<label for="email">Your email</label>
+  				</div>
+  				<div class="input-field">
+  					<i class="material-icons prefix">message</i>
+  					<textarea id="message" class="materialize-textarea"></textarea>
+  					<label for="message">Your message</label>
+  				</div>
+  				<!--
+  				<div class="input-field">
+  					<input type="text" id="date" class="datepicker">
+  					<label for="date">Choose a date you need me for...</label>
+  				</div>
+  				-->
+  			</form>
+  		</div>
+  	</div>	
+  </section>
+
+  <!-- footer -->
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../MyWebpage.js"></script> 
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAvDkLWAIuC0qrT8fRFBW6l1r-hi89s5s&callback=initMap">
+  </script>
+  <script>	
+    $(document).ready(function(){
+    	$('.sidenav').sidenav();
+    	$('.materialboxed').materialbox();
+    	$('.parallax').parallax();
+    	$('.tabs').tabs();
+    	$('.datepicker').datepicker({
+    		disableWeekends: true
+    	});
+    	$('.tooltipped').tooltip()
+    	$('.scrollspy').scrollSpy()
+
+    });
+  </script>
+</body>
+</html>
